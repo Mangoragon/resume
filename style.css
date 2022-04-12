@@ -1,0 +1,23 @@
+.bg-black{
+    background-color: black;
+}
+.bg-bshade{
+    background-color: rgb(14, 118, 209);
+}
+.bg-bshade2{
+    background-color: rgb(8, 105, 190);
+}
+.font-div{
+    width: 30%;
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+
+/* Responsive*/
+@media only screen and (min-width: 1198px){
+    .font-div{
+        padding: 60.5px 0px!important  ;
+    }
+}
