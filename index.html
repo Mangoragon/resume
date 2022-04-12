@@ -7,6 +7,11 @@
   <title>MyResume</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Anek+Tamil:wght@500&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -16,7 +21,7 @@
 
       <div class="row no-gutters">
         <div class="col-lg-4 col-md-4">
-            <img src="img/albert2.jpg" style="size: width;">
+            <img src="img/albert2.jpg">
         </div>
 
         <div class="col-lg-8 col-md-8">
@@ -28,7 +33,7 @@
                   <div><i class="fa fa-facebook-square"></i></div>
                   <div><i class="fa fa-instagram"></i></div>
                   <div><i class="fa fa-envelope"></i></div>
-                  <div><i class="fa fa-github"></i></div>
+                  <div><i class="fa fa-google-plus"></i></div>
                 </div>
               </div>
 
@@ -37,17 +42,17 @@
               </div>
 
               <div class="d-flex flex-row text-center text-white">
-                  <div class="p-4 bg-bshade font-div" data >
+                  <div class="p-4 bg-bshade font-div" data-toggle="collapse"data-target="#home" >
                       <i class="fa fa-home fa-2x d-block"></i> Home
                   </div>
-                  <div class="p-4 bg-bshade2 font-div" >
-                    <i class="fa fa-graduation-cap fa-2x d-block"></i> Education
+                  <div class="p-4 bg-bshade2 font-div" data-toggle="collapse"data-target="#education" >
+                    <i class="fa fa-graduation-cap fa-2x d-block" ></i> Education
                   </div>
-                  <div class="p-4 bg-bshade font-div" >
-                    <i class="fa fa-folder fa-2x d-block"></i> Work
+                  <div class="p-4 bg-bshade font-div" data-toggle="collapse"data-target="#skill" >
+                    <i class="fa fa-folder fa-2x d-block"></i> Skill
                   </div>
-                  <div class="p-4 bg-bshade2 font-div" >
-                    <i class="fa fa-envelope fa-2x d-block"></i> Contact
+                  <div class="p-4 bg-bshade2 font-div"data-toggle="collapse"data-target="#contact" >
+                    <i class="fa fa-envelope fa-2x d-block"></i> Contact Info
                   </div>
 
               </div>
@@ -62,13 +67,164 @@
   </header>
   
   <div class="container">
-    <footer class="p-5 bg-dark text- center">
-      &nbsp;
-    </footer>
+    
+    <div class="collapse " id="home" >
+      <div class="p-5 text-white bg-bshade">
+        <h2>Home</h2>
+        <p>All about me</p>
+      </div>
+
+      <div class="card card-body">
+        <p class="homeFont">
+          <span>My Name :</span> <br>
+          <span>Albert Chang (English)</span> <br>
+          <span class="chinese">邱張安善 (中文）</span> <br><br>
+          
+          <span>From </span><br><br>
+          <span class="flag"><img class="flagImg" src="img/indo.jpg"><img class="flagImg" src="img/arrow.png"><img class="flagImg" src="img/taiwan.jpg"></span>
+        </p>
+        <h3>Why Choose Taiwan?</h3><br>
+        <p class="homeFont">Because Taiwan is a more developed country than Indonesia. I once came to Taiwan on a vacation and I think this is a great place for student </p><br>
+        <br>
+        <h3>My Language Skill</h3><br>
+        <h5>Indonesia</h5><br>
+        <div class="progress">
+          <div class="progress-bar" style="width: 100%;"></div>
+        </div>
+        <h5>Hokkien</h5><br>
+        <div class="progress">
+          <div class="progress-bar" style="width: 85%;"></div>
+        </div>
+        <h5>English</h5><br>
+        <div class="progress">
+          <div class="progress-bar" style="width: 80%;"></div>
+        </div>
+        <h5>Chinese</h5><br>
+        <div class="progress">
+          <div class="progress-bar" style="width: 50%;"></div>
+        </div>
+        
+      </div>
+    </div>
+      
+
+
+    <div class="collapse " id="education" >
+      <div class="p-5 text-white bg-bshade2">
+        <h2>Education</h2>
+        <p>My education history</p>
+      </div>
+
+      <div class="card card-body">
+        <div class="edu">
+          <ul>
+            <li>
+              <span class="logo"><img src="img/YPDB.jpg"  ></span>
+              <span class="exp">Primary School (2009-2014): Dharma Bakti</span>
+            </li>
+            <li>
+              <span class="logo"><img src="img/methodist.png"></span>
+              <span class="exp">Junior High (2014-2016): Methodist </span>
+            </li>
+            <li>
+              <span class="logo"><img src="img/methodist.png" ></span>
+              <span class="exp">Senior High (2016-2018) : Methodist</span>
+            </li>
+            <li>
+              <span class="logo"><img src="img/cycu.png"></span>
+              <span class="exp">University (2019-...): Chung Yuan Christian University</span>
+            </li>
+          </ul>
+        </div>
+          
+      </div>
+    
+    </div>
+
+
+    <div class="collapse " id="skill" >
+      <div class="p-5 text-white bg-bshade">
+        <h2>Skill</h2>
+        <p>My understanding about programming language</p>
+      </div>
+      <div class="card card-body">
+        <h3>HTML</h3>
+        <div class="progress">
+          <div class="progress-bar" style="width: 60%;"></div>
+        </div>
+        <h3>Java</h3>
+        <div class="progress">
+          <div class="progress-bar" style="width: 70%;"></div>
+        </div>
+        <h3>CSS</h3>
+        <div class="progress">
+          <div class="progress-bar" style="width: 50%;"></div>
+        </div>
+        <h3>C#</h3>
+        <div class="progress">
+          <div class="progress-bar" style="width: 30%;"></div>
+        </div>
+        <h3>Bootstrap</h3>
+        <div class="progress">
+          <div class="progress-bar" style="width: 20%;"></div>
+        </div>
+      </div>
+        
+    </div>
+
+    <div class="collapse " id="contact" >
+      <div class="p-5 text-white bg-bshade2">
+        <h2>Contact Info</h2>
+        <h4>Social media & e-mail</h4>
+      </div>
+      <div class="card card-body">
+        <div class="contactInfo">
+          <ul>
+            <li>
+              <span class="icon"><i class="fa fa-phone"></i></span>
+              <span class="text">+886 966 469 321</span>
+            </li>
+            <li>
+              <span class="icon"><i class="fa fa-envelope-o"></i></span>
+              <span class="text">albertzh495@gmail.com</span>
+            </li>
+            <li>
+              <span class="icon"><i class="fa fa-instagram"></i></span>
+              <span class="text">albertzh495</span>
+            </li>
+            <li>
+              <span class="icon"><i class="fa fa-facebook"></i></span>
+              <span class="text">Albert Chang (邱張安善）</span>
+            </li>
+          </ul>
+        
+        </div>
+      </div>
+    
+    </div>
+
+
   </div>
+
+
+  
+  
+  <div class="container"><footer class="p-5 bg-dark "></footer></div>
+
+
+
+  
   
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+  
+  <script type="text/javascript">
+    
+    $('.font-div').click(function(){
+      $('.collapse').collapse('hide');
+    });
+
+  </script>
 </body>
 </html>
